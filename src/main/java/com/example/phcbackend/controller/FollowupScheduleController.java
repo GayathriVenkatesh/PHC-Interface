@@ -32,7 +32,7 @@ public class FollowupScheduleController {
         this.followupScheduleRepository = followupScheduleRepository;
     }
 
-    @GetMapping("/followups/{samId}")
+    @GetMapping("/followup-schedule/{samId}")
     public List<FollowupSchedule> getFollowupScheduleBySamId(@PathVariable String samId) {
         return (List<FollowupSchedule>) this.followupScheduleRepository.findBySamId(samId);
     }
