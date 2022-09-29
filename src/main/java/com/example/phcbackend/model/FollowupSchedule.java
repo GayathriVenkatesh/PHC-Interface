@@ -15,36 +15,36 @@ public class FollowupSchedule {
     
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long followupScheduleID;
-    private String samID;
-    private String ashaID;
+    private Long followupScheduleId;
+    private String samId;
+    private String ashaId;
     private LocalDate scheduledVisit;
     private String status;
     public FollowupSchedule() {
     }
-    public FollowupSchedule(String samID, String ashaID, LocalDate scheduledVisit, String status) {
-        this.samID = samID;
-        this.ashaID = ashaID;
+    public FollowupSchedule(String samId, String ashaId, LocalDate scheduledVisit, String status) {
+        this.samId = samId;
+        this.ashaId = ashaId;
         this.scheduledVisit = scheduledVisit;
         this.status = status;
     }
     public Long getFollowupScheduleID() {
-        return followupScheduleID;
+        return followupScheduleId;
     }
-    public void setFollowupScheduleID(Long followupScheduleID) {
-        this.followupScheduleID = followupScheduleID;
+    public void setFollowupScheduleID(Long followupScheduleId) {
+        this.followupScheduleId = followupScheduleId;
     }
     public String getSamID() {
-        return samID;
+        return samId;
     }
-    public void setSamID(String samID) {
-        this.samID = samID;
+    public void setSamID(String samId) {
+        this.samId = samId;
     }
     public String getAshaID() {
-        return ashaID;
+        return ashaId;
     }
-    public void setAshaID(String ashaID) {
-        this.ashaID = ashaID;
+    public void setAshaID(String ashaId) {
+        this.ashaId = ashaId;
     }
     public LocalDate getScheduledVisit() {
         return scheduledVisit;
